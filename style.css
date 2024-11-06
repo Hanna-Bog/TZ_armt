@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.site-main {
+    margin: auto;
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.content {
+    max-width: 1180px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.content img {
+    max-width: 100%;
+    margin: 24px 0;
+}
+
+.skidki {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 24px;
+}
+
+.skidki-choice p:first-child, .usloviya p:first-child, .podbor p:first-child {
+    font-size: 32px;
+    color: #FF6900;
+    font-weight: 700;
+    margin: auto;
+}
+
+.skidki-choice p:nth-child(2) {
+    margin: 8px 0 24px 0;
+}
+
+.skidki img {
+    width: 30%;
+    height: 50%;
+}
+
+.skidki-buttons {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+}
+
+.skidki-buttons__btn, .podbor button, .contact button{
+    border-radius: 8px;
+    height: 54px;
+    width: 246px;
+    max-width: 100%;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #FF6900;
+    color: #FFFFFF;
+    border: 1px solid #FF6F00
+}
+
+
+
+.skidki-buttons__btn:first-child {
+    margin-right: 10px;
+}
+
+.skidki-buttons__btn:first-child:active, .podbor button:active, .contact button:active {
+    background: #FFFFFF ;
+    color: #FF6900;
+}
+
+.skidki-buttons__btn:last-child, .contact button:first-child  {
+    background: #FFFFFF ;
+    color: #FF6900;
+}
+
+.skidki-buttons__btn:last-child:active, .contact button:first-child:active  {
+    background:  #FF6900;
+    color: #FFFFFF;
+}
+
+.usloviya, .pravila, .podbor {
+    margin-bottom: 24px;
+}
+
+.usloviya ul {
+    list-style-image: url(./src/img/check_1.png);
+}
+
+.usloviya ul span {
+  position: relative;
+  top: -5px;    
+}
+
+.pravila {
+    height: 432px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight: 400;;
+    margin-bottom: 16px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 16px;
+    background: linear-gradient(90deg, #D9D9D9, #FFFFFF);
+}
+
+.pravila__block {
+    display: flex;
+    flex-flow: column;
+    padding: 32px 16px 32px 32px;
+}
+
+.pravila__block p {
+    font-size: 24px;
+    font-weight: 900;
+}
+
+.pravila__block ul {
+        list-style-image: url(./src/img/check_2.png);
+}
+
+.pravila__block ul span {
+    position: relative;
+    top: -5px;    
+  }
+
+.pravila img {
+    width: 35%;
+    margin: 0;
+    height: 100%;
+}
+
+.podbor p:nth-child(2) {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+    margin-top: 24px;
+}
+
+.bold {
+    font-weight: 900;
+}
+
+@media screen and (min-width: 210px) and (max-width: 768px) {
+    
+    .skidki-buttons{
+        display: flex;
+        flex-flow: column;
+    }
+
+    .skidki-buttons__btn:first-child {
+        margin-bottom: 10px;
+    }
+
+    .skidki img {
+        display: none;
+    }  
+    
+    .pravila {
+        height: 100%;
+    }
+
+    .pravila__block {
+        height: 100%;
+    }
+
+    .pravila img {
+        display: none;
+    }
+
+    .contact {
+        justify-content: space-between;
+    }
+}
